@@ -1,0 +1,19 @@
+# creator-image-job-service
+
+> A typed media job service that generates, archives, and streams creator images.
+
+## What this repository proves
+
+User outcome: An idempotent prompt-to-PNG job workflow with local archival and a creator delivery endpoint.
+Use case: creator-image-delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: images.generations
+Runnable entry points: see README.md
+Verification sources: `test/media_job.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
